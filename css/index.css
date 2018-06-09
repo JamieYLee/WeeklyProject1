@@ -1,0 +1,48 @@
+@import 'main.css';
+
+.col-md-8 {
+  margin-left: 31px;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+.scrolls {
+  height: 360px;
+  background-color: #923530;
+  overflow: hidden;
+  color: #fff;
+}
+
+strong {
+  position: relative;
+  top: 15px;
+  font-size: 12px;
+}
+
+.newsline {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  top: 20px;
+}
+
+.newsfeed {
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+  font-size: 11px;
+}
+
+#email {
+  text-decoration: underline;
+  color: #bbb;
+}
+
+#email:hover {
+  color: #a75d59
+}

@@ -1,0 +1,142 @@
+body {
+  background-image: url(../media/img/wooden_background.jpg);
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+.container {
+  background-color: #fff;
+  width: 940px;
+  margin: 10px auto;
+  box-shadow: 0 0 25px 0 #777;
+}
+
+.title {
+  left: 41px;
+  margin-top: 46px;
+  margin-bottom: 22px;
+}
+
+.navbar ul{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 14px;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.nav-link, ul li {
+  display: inline;
+}
+
+.navbar ul a {
+  color: #000;
+}
+
+.first {
+  border-left: 0;
+}
+
+.navbar ul a:hover {
+  color: #a75d59;
+}
+
+.vert-bar {
+  color: lightgrey;
+  line-height: 30px;
+}
+
+.center {
+  display: block;
+  margin: 2px auto;
+}
+
+.menu_margin {
+  margin-left: 50px;
+}
+
+.menu {
+  background-color: #923530;
+  color: #fff;
+}
+
+.menu h5 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.menuline {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  margin: 4px auto;
+}
+
+.menulist {
+  left: -19px;
+  display: block;
+  position: relative;
+}
+
+ul[class="menulist"] li {
+  line-height: 2.5em;
+  font-size: 11px;
+}
+
+ul[class="menulist"] li:hover {
+  font-size: 105%;
+}
+
+.menuImage {
+  position: relative;
+  left: -7px;
+}
+
+.menulink {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.menulink a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footnav {
+  margin-top: 30px;
+  font-size: 10px;
+  height: 30px;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
+
+.footnav a {
+  color: #000;
+}
+
+.footnav a:hover {
+  color: #a75d59;
+}
+
+.copyright {
+  font-size: 10px;
+  color: #bbb;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.copyright a{
+  color: #bbb;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #a75d59;
+}
+
+.upmargin {
+  margin-top: 15px;
+}
