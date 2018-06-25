@@ -1,5 +1,5 @@
 body {
-  background-image: url(../media/img/wooden_background.jpg);
+  background-image: url(../media/img/nza_background.jpg);
   font-family: Verdana;
   font-size: 13px;
 }
@@ -15,6 +15,12 @@ body {
   left: 41px;
   margin-top: 46px;
   margin-bottom: 22px;
+}
+
+.navbar {margin-bottom: 0;}
+
+.navbar-nav {
+  margin: 7.5px 33px;
 }
 
 .navbar ul{
@@ -41,6 +47,7 @@ body {
 
 .navbar ul a:hover {
   color: #a75d59;
+  text-decoration: none;
 }
 
 .vert-bar {
@@ -105,6 +112,12 @@ ul[class="menulist"] li:hover {
   text-decoration: none;
 }
 
+footer .nav-link{
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
 .footnav {
   margin-top: 30px;
   font-size: 10px;
@@ -119,6 +132,7 @@ ul[class="menulist"] li:hover {
 
 .footnav a:hover {
   color: #a75d59;
+  text-decoration: none;
 }
 
 .copyright {
@@ -135,6 +149,7 @@ ul[class="menulist"] li:hover {
 
 .copyright a:hover {
   color: #a75d59;
+  text-decoration: none;
 }
 
 .upmargin {
