@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}Profile settings - {{ super() }}{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/css/profile.css">
+{% endblock %}
+
+{% block app_content %}
+<div class="row first-row">
+  <div class="col-md-1"></div>
+  <div class="col-md-4">
+    <img src="http://placehold.it/250x300">
+  </div>
+  <div class="col-md-7">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ current_user.username }}</h1>
+        <h4>{{ current_user.email }}</h4>
+        <p class="pull-right edit">Edit Profile</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {{ wtf.quick_form(form) }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

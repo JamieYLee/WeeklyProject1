@@ -11,6 +11,28 @@ body {
   box-shadow: 0 0 25px 0 #777;
 }
 
+#login-menu {
+  background-color: #ccc;
+  min-height: 0;
+  width: 170px;
+  display: inline;
+  margin-bottom: -20px;
+}
+
+#logins {
+  border: 0;
+  margin: 8px 0;
+  padding: 3px 0;
+  font-size: 10px;
+  float: left;
+  display: inline;
+}
+
+.loggin:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
 .title {
   left: 41px;
   margin-top: 46px;

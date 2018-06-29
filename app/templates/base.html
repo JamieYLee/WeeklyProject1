@@ -14,34 +14,62 @@
     <div class="row">
       <div class="col-md-12">
         <header>
+
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="navbar navbar-expand-sm pull-right" id="login-menu">
+                <ul class="navbar-nav" id="logins">
+                  {% if current_user.is_anonymous %}
+                    <a class="nav-link" href="{{ url_for('register') }}">
+                      <li class="nav-item loggin">Register</li>
+                    </a>
+                    <span>&#124;</span>
+                    <a class="nav-link" href="{{ url_for('login') }}">
+                      <li class="nav-item loggin">Login</li>
+                    </a>
+                  {% else %}
+                    <a class="nav-link" href="{{ url_for('profile1') }}">
+                      <li class="nav-item loggin">Profile</li>
+                    </a>
+                    <span>&#124;</span>
+                    <a class="nav-link" href="{{ url_for('logout') }}">
+                      <li class="nav-item loggin">Logout</li>
+                    </a>
+                  {% endif %}
+                </ul>
+              </nav>
+            </div>
+          </div>
+
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-11">
-              <a href="#"><img src="http://placehold.it/318x76" alt="Title" class="title"></a>
+              <a href="{{ url_for('index') }}"><img src="http://placehold.it/318x76" alt="Title" class="title"></a>
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-12">
               <nav class="navbar navbar-expand-sm">
                 <!-- Links -->
                 <ul class="navbar-nav mx-auto">
-                  <a class="nav-link first" href="#">
+                  <a class="nav-link first" href="{{ url_for('who') }}">
                     <li class="nav-item">WHO WE ARE</li>
                   </a>
                   <span class="vert-bar">&#124;</span>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="{{ url_for('what') }}">
                     <li class="nav-item">WHAT WE DO</li>
                   </a>
                   <span class="vert-bar">&#124;</span>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="{{ url_for('news') }}">
                     <li class="nav-item">NEWS &amp; EVENTS</li>
                   </a>
                   <span class="vert-bar">&#124;</span>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="{{ url_for('where') }}">
                     <li class="nav-item">WHERE WE WORK</li>
                   </a>
                   <span class="vert-bar">&#124;</span>
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="{{ url_for('contact') }}">
                     <li class="nav-item">CONTACT US</li>
                   </a>
                 </ul>
@@ -61,27 +89,27 @@
           <div class="col-md-1"></div>
           <div class="col-md-10 offset-md-1">
             <ul class="footnav">
-              <a class="nav-link first" href="/index">
+              <a class="nav-link first" href="{{ url_for('index') }}">
                 <li class="nav-item">HOME</li>
               </a>
               <span>-</span>
-              <a class="nav-link first" href="#">
+              <a class="nav-link first" href="{{ url_for('who') }}">
                 <li class="nav-item">WHO WE ARE</li>
               </a>
               <span>-</span>
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{ url_for('what') }}">
                 <li class="nav-item">WHAT WE DO</li>
               </a>
               <span>-</span>
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{ url_for('news') }}">
                 <li class="nav-item">NEWS &amp; EVENTS</li>
               </a>
               <span>-</span>
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{ url_for('where') }}">
                 <li class="nav-item">WHERE WE WORK</li>
               </a>
               <span>-</span>
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{ url_for('contact') }}">
                 <li class="nav-item">CONTACT US</li>
               </a>
             </ul>

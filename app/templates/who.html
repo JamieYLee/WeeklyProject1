@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}Who are we - {{ super() }}{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/css/who.css">
+{% endblock %}
+
+{% block app_content %}
+<div class="row upmargin">
+  <div class="col-md-2 menu_margin menu">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>WHO ARE WE</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="menuline"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="menulist">
+          <li class="menulist">Welcome</li>
+          <li class="menulist">Attorneys</li>
+          <li class="menulist">Staff</li>
+          <li class="menulist">Reputation</li>
+          <li class="menulist">History</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img src="http://placehold.it/140x85" alt="Image" class="center menuImage">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 menulink">
+        <a href="#">
+          <strong>Where We Work</strong><br>
+          Lorem ipsum dolor sit amet
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9">
+    <div class="row">
+      <div class="col-md-12">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+      </div>
+    <div class="row upmargin">
+      <div class="col-md-12">
+        <img src="http://placehold.it/300x118" alt="Image" class="imgs"/>
+        <img src="http://placehold.it/300x118" alt="Image" class="imgs"/>
+        <img src="http://placehold.it/300x118" alt="Image" class="imgs"/>
+        <img src="http://placehold.it/300x118" alt="Image" class="imgs"/>
+        <img src="http://placehold.it/300x118" alt="Image" class="imgs"/>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+@import 'main.css';
+
+.first-row {
+  margin-top: 25px;
+}
+
+h4 {
+  margin-top: 20px;
+  position: relative;
+}
+
+h4:before {
+  top: 25px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #555;
+  width: 85%
+}
+
+ .edit {
+   margin-right: 15%;
+   color: #337ac4;
+ }
+
+#username, #email {
+  width: 80%;
+}
+
+#submit {
+  width: 80%;
+  background-color: #923530;
+  color: #bbb;
+  transition: color 0.25s ease;
+}
+
+#submit:hover{
+  color: #fff;
+}
